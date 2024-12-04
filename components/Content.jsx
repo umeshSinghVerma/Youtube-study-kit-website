@@ -1,7 +1,8 @@
 import ImageContent from "./ImageContent"
 import TakingSnapshot from './takingsnapshot.png'
-import TakingNotes from  "./takingnotes.png"
+import TakingNotes from "./takingnotes.png"
 import Drawing from "./drawing.png"
+import Image from "next/image"
 const Content = () => {
     const data = [
         {
@@ -106,6 +107,22 @@ const Content = () => {
     ]
     return (
         <div className="bg-[#fbf9f4] py-[50px] md:py-[100px] md:px-[14%] flex flex-col gap-10 md:gap-28">
+            <div className="flex flex-col justify-center">
+                <p className="text-[2rem] font-bold my-2 text-center">🛠️ How to Use</p>
+                <div>
+                    <p className="text-[1.5rem] font-bold my-10 mb-5">🎥 GIF Demonstration: <span className="text-[#da3832]">Taking Notes and Downloading PDFs</span></p>
+                    <img src="/Fast-Demonstration.gif" alt="Youtube Study Kit" width={"100%"} />
+                </div>
+                <div>
+                    <p className="text-[1.5rem] font-bold my-10  mb-5">🎥 GIF Demonstration: <span className="text-[#da3832]">Using the AI Chat Feature</span></p>
+                    <img src="/AI-demo.gif" alt="Youtube Study Kit" width={"100%"} />
+                </div>
+                <div>
+                    <p className="text-[1.5rem] font-bold my-10  mb-5">🎥 GIF Demonstration: <span className="text-[#da3832]">Multilingual AI Responses</span></p>
+                    <img src="/Language-Translation.gif" alt="Youtube Study Kit" width={"100%"} />
+                </div>
+            </div>
+            <p className="text-[2rem] font-bold my-2 text-center">🌟 Features</p>
             {
                 data.map((data, index) => {
                     return <ImageContent data={{ ...data, imgPos: index % 2 == 0 ? "right" : "left" }} key={index} />
