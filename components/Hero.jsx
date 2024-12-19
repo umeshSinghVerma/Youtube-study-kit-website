@@ -12,7 +12,7 @@ const Hero = () => {
                 </p>
                 <p className="text-[22px] opacity-[0.7] text-center font-[200]">Capturing Information from videos Made Easy and Visual! Now powered by <span className="font-semibold">Google Youtube Data API</span></p>
             </div>
-            <Link href="#" className="flex bg-[#fddcdf] p-5 text-left gap-4 rounded-full m-10 w-[260px] h-[71px] items-center justify-center hover:bg-red-300">
+            <Link href="https://chromewebstore.google.com/detail/youtube-study-kit/eoepepnjglaaomodjadnfedjfhilebol" className="flex bg-[#fddcdf] p-5 text-left gap-4 rounded-full m-10 w-[260px] h-[71px] items-center justify-center hover:bg-red-300">
                 <Image src="/google-image.svg"  alt="Youtube Study Kit" height={50} width={50}/>
                 <div>
                     <p className="text-[12px]">Download the</p>
