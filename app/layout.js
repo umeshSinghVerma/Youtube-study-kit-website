@@ -10,6 +10,9 @@ export const metadata = {
   icons:{
     icon:["/logo.png?v=1"],
     apple:["/logo.png?v=3"]
+  },
+  verification: {
+    google: 'ZK_5g5AWJmh1Kv-hsH5uWI-hZnGZYg-GmM3MjIuRHzU',
   }
 };
 
@@ -19,7 +22,6 @@ export default function RootLayout({ children }) {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <meta name="google-site-verification" content="ZK_5g5AWJmh1Kv-hsH5uWI-hZnGZYg-GmM3MjIuRHzU" />
         <link rel="icon" href={metadata.icons.icon[0]} />
         <link rel="apple-touch-icon" href={metadata.icons.apple[0]} />
       </Head>
